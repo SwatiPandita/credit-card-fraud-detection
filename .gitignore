@@ -1,0 +1,7 @@
+.DS_Store
+creditcard.csv
+creditcard.csv.zip
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+.vscode/
