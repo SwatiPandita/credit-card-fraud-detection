@@ -91,12 +91,12 @@ As false alarms get more expensive, the best threshold rises and the model flags
 - The 1,081 duplicate rows were not removed.
 
 ## Earlier experiments and credits
-The folder `earlier_experiments/` holds three older notebooks (`k-means.ipynb`, `logistic-regression.ipynb`, `neural-network.ipynb`). They are kept for reference only. They use older accuracy-based evaluation, are not part of the results above, and their neural-network and K-Means results are weak. They follow the structure of a 2017 Kaggle course project by Georgy Marrero, Makena Schwinn and Sunny Zhang: [link to original project, if known]. [Add one sentence saying exactly what you changed or wrote yourself.]
+Three older notebooks (`k-means.ipynb`, `logistic-regression.ipynb`, `neural-network.ipynb`) are kept for reference only. They use older accuracy-based evaluation, are not part of the results above, and their neural-network and K-Means results are weak. They follow the structure of a 2017 Kaggle course project by Georgy Marrero, Makena Schwinn and Sunny Zhang.
 
 ## Repository contents
 - `analysis_and_business_impact.ipynb`: EDA, class-weighted logistic regression, validated cost-based threshold analysis
 - `model_comparison.ipynb`: Logistic Regression vs Random Forest vs K-Means, PR curve, cost and sensitivity analysis
-- `earlier_experiments/`: older notebooks, for reference
+- `k-means.ipynb`, `logistic-regression.ipynb`, `neural-network.ipynb`: older notebooks, kept for reference
 - `*.png`: charts used in this README
 - `requirements.txt`: Python packages needed
 
@@ -108,4 +108,4 @@ The folder `earlier_experiments/` holds three older notebooks (`k-means.ipynb`, 
 Tools: Python 3.10, pandas, numpy, scikit-learn, matplotlib.
 
 ## Author
-Swati Pandita | [LinkedIn URL] | [email]
+Swati Pandita
