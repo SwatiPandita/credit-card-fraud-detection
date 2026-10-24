@@ -116,6 +116,11 @@ What this shows:
 - **Do not trust a single threshold.** Because the best threshold moved a lot between splits, a real system should set it on more data (for example with cross-validation) and re-check it regularly.
 - **The savings are estimates, not forecasts.** They depend on the assumed false-alarm cost and on the assumption that every flagged fraud is stopped.
 
+## Power BI dashboard
+An interactive dashboard (`Credit-Card-Fraud-Detection.pbix`) lets a non-technical user choose the false-alarm cost and see the validation-chosen threshold, the estimated loss, the saving and the cost curve. It uses the Random Forest results of the seed-42 split in `model_comparison.ipynb`, plus the fraud rate by hour and by amount band. The data files are `threshold_analysis.csv`, `fraud_by_hour.csv` and `fraud_by_amount_band.csv`.
+
+![Power BI dashboard](fraud_dashboard_screenshot.png)
+
 ## Limitations
 - Each test set has only about 95-99 frauds, so results are noisy. Part 3 repeats the split 5 times, but this is not full cross-validation.
 - The false-alarm cost is an assumption; the tables show how the answer moves if it is wrong. The cost model also assumes a flagged fraud is fully stopped and a missed fraud loses its full amount.
@@ -135,6 +140,7 @@ Three older notebooks (`k-means.ipynb`, `logistic-regression.ipynb`, `neural-net
 - `k-means.ipynb`, `logistic-regression.ipynb`, `neural-network.ipynb`: older notebooks, kept for reference
 - `*.png`: charts used in this README
 - `requirements.txt`: Python packages needed
+- - `Credit-Card-Fraud-Detection.pbix`: interactive Power BI dashboard, with its 3 CSV data files
 
 ## How to run
 1. `pip install -r requirements.txt`
